@@ -417,5 +417,26 @@ img[Attributes Style] {
     float: left !important;
 }
 
+/* Go To Top Button on Screen */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 99;
+  font-size: 1px;
+  border: none;
+  outline: none;
+  background-color: #F44336 !important;
+  color: white;
+  cursor: pointer;
+  padding: 1px;
+  border-radius: 50%;  
+}
+
+#myBtn:hover {
+  background-color: #F44336 !important;
+}
+
 /*======================ID SELECTOR================================================*/
 /*=--- Note : # is use to define ID : we can use only change the sinle element TD, , and we cant have more than one ID ---=*/

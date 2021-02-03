@@ -184,6 +184,9 @@
   margin: 8px;
   height: 360px;
 }
+
+
+
 </style>
 </head>
 <body>
@@ -913,7 +916,7 @@ and submitting an application using <a href="https://kotlinlang.org/">Kotlin Pro
       <h4 class="header col s12" style="padding: 16% 0% 0%;font: 40px Arial, sans-serif;"><i class="fa fa-download" aria-hidden="true"></i>And here's my resume...</h4>
       <div class="center">
         <a href="Resume_Komal_Wavhal_2021.pdf" download>
-        <button class="btn white" style="font: 18px Arial, sans-serif;"> RESUME </button>
+        <button class="btn white" style="font: 18px Arial, sans-serif;"> RESUME </button></a>
       </div>
 </div>
 
@@ -922,6 +925,35 @@ and submitting an application using <a href="https://kotlinlang.org/">Kotlin Pro
 <div class="bottom-container">
     <center style="padding: 30px 0 2px ; color: white;"> Copyright © Komal Wavhal 2021 </center>
 </div>
+
+
+
+ <!-- Go To Top Button on Screen -->
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i style="  padding: 19px; font-size: 25px; width: 25px; text-align: center; text-decoration: none; margin: 1px 1px;" class="fa fa-angle-up"></i></button>
+
+<script>
+  //Get the button
+  var mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function() {scrollFunction()};
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+
+
 
 </body>
 </html>
