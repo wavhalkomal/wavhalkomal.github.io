@@ -103,6 +103,22 @@
 }
 
 
+.fa-laptop{
+  color: black;
+}
+.fa-briefcase{
+  color: black;
+}
+.fa-code{
+  color: black;
+}
+.fa-star-half-o{
+  color: black;
+}
+.fa-download{
+  color: black;
+}
+
 /* footer */
 .skill-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("code-screen.jpg");
@@ -235,20 +251,74 @@
   background-color: #F44336 !important;
 }
 
+
+
 </style>
 </head>
 <body>
 
 <!-- ========================== Main Page Section ============================================= -->
  <!-- style="position: relative; animation: mymove 1s; animation-fill-mode: forwards;" -->
-<div class="hero-image">
+<div class="hero-image" id="index-banner" >
   <center style="position: relative; animation: mymove 1s; animation-fill-mode: forwards;"><img alt="image of Komal" class="avatar1 z-depth-5" src="Image/komal-image.png" style="border-radius: 100%; width: 20%;"></center>
+
+
+
+    <!-- ================= START - Side navigation Bar===================  -->
+
+    <input type="checkbox" id="togglebox" />
+
+    <div class="overlay"><label for="togglebox"></label></div>
+
+    <nav id="offcanvas-menu">
+
+      <ul  class="side-nav" id="slide-out" style="transform: translateX(0px);">
+
+      	<li>
+      		<div  class="userView">
+      			<div  class="background">
+      				<img  alt="image of lamps at night" src="Image/lamps-night.jpg" style="width: 100%;opacity: 0.9;">
+      			</div>
+      			<a  href="#index-banner" ><img  alt="image of Komal" class="circle" src="Image/Komal-dp.JPG"></a>
+      			<a  href="#index-banner" id="logo-container" ><img style="padding: 17px 0px 11px 5px" alt="komal-logo" border="0" src="Image/komal-logo.png"></a>
+      		</div>
+      	</li>
+        <li ><a  class="waves-effects" href="#intro" ><i  class="material-icons">face</i>About me!</a></li>
+        <li ><a  class="waves-effects" href="#technical-skills" ><i  aria-hidden="true" style="padding: 0 0 0 0%;" class="fa fa-laptop fa-2x"></i>Technical Skills</a></li>
+    		<li ><a  class="waves-effects" href="#work-exp" ><i  aria-hidden="true" style="padding: 0 0 0 0%;" class="fa fa-briefcase fa-2x"></i>Work Experience</a></li>
+      	<li ><a  class="waves-effects" href="#achievements" ><i  aria-hidden="true" style="padding: 0 0 0 0%;" class="fa fa-star-half-o fa-2x"></i>Awards &amp; Achievements</a></li>
+      	<li ><a  class="waves-effects" href="#projects" ><i  aria-hidden="true" style="padding: 0 0 0 0%;" class="fa fa-code fa-2x"></i>Projects &amp; Code</a></li>
+      	<li ><a  class="waves-effects" href="#message-me" ><i  class="material-icons">chat</i>Message me!</a></li>
+      	<li ><a  class="waves-effects" href="#index-banner" ><i  class="material-icons">people</i>Social Network</a></li>
+        <li >
+      		<a  class="waves-effects" href="Resume_Komal_Wavhal_2021.pdf" target="_blank">
+      			<i  aria-hidden="true" style="padding: 0 0 0 0%;" class="fa fa-download fa-2x"></i>My Resume!!
+      		</a>
+      	</li>
+        <li ><a  class="waves-effects" href="#index-banner" ><i  class="material-icons">people</i>Social Network</a></li>
+
+      </ul>
+
+    </nav>
+
+    <!-- <div id="contentarea">
+      <label for="togglebox" id="navtoggler">Menu</label>
+    </div> -->
+
+    <div id="contentarea" class="black  animated slideInLeft" style="position: fixed; z-index: 3; margin-top: 10px; margin-left: 10px">
+      <label class="btn-floating button-collapse waves-effect waves-light white-text transparent" for="togglebox" id="navtoggler">Menu</label>
+    </div>
+
+    <!-- ================= END -  Side navigation Bar===================  -->
+
+
+
   <div class="middle">
     <div class="text">Komal Wavhal</div>
   </div>
 </div>
 
-<div class="hero-text">
+<div class="hero-text" >
   <p style="font-size: 2.39rem;line-height: 85%;">Hi! I'm <strong style="opacity: 0.7">Komal Wavhal</strong> </p>
   <p style="font-size:23px;line-height: 90%;" >A Technology Enthusiast. I ♥ to Code & Make cool stuff.</p>
   <p style="font-size:17px" > A Software Developer Who loves to learn and try new tools & technologies passionately.</p>
@@ -261,6 +331,7 @@
   <a style="opacity: 0.7 ; color: black"  href="https://www.facebook.com/komal.wavhal.10690/" class="fa fa-facebook icon-bg-color"></a>
   <a style="opacity: 0.7 ; color: black"  href="mailto:wavhalkomal7@gmail.com" class="fa fa-envelope icon-bg-color"></a>
 </div>
+
 
 <!-- ========================== Introduction Page Section============================================= -->
 
@@ -309,7 +380,7 @@
 
 <!-- ========================== Professional Work Experience Section============================================= -->
 
-<div class="bgimg-3">
+<div class="bgimg-3" id="work-exp">
   <div class="caption">
     <span class="border" style="background-color:transparent;font-size: 3.8rem; color: #fff;opacity: 1;">Work Experience</span>
   </div>
@@ -427,7 +498,7 @@
 
 <!-- ========================== Awards, Achievements & Certifications Section============================================= -->
 
-<div class="bgimg-4">
+<div class="bgimg-4" id="achievements">
   <div class="cartification-caption">
     <span class="border" style="background-color:transparent;font-size: 3.8rem; color: #fff;opacity: 1;">Achievements<br>&amp;<br>Certifications</span>
   </div>
@@ -677,7 +748,7 @@ and submitting an application using <a href="https://kotlinlang.org/">Kotlin Pro
 <hr>
 <!-- ========================== Technical Skills Section============================================= -->
 
-<div class="skill-image">
+<div class="skill-image" id="technical-skills">
       <h4 style="font-size: 3.8rem; padding: 12% 0% 30%; " class="header col s12" >Technical Skills</h4>
 </div>
 
@@ -832,7 +903,7 @@ and submitting an application using <a href="https://kotlinlang.org/">Kotlin Pro
 
 <!-- ========================== Projects & Code Section============================================= -->
 
-<div class="code-image">
+<div class="code-image" id="projects">
       <h4 style="font-size: 3.8rem; padding: 12% 0% 30%; " class="header col s12" >Projects & Code</h4>
 </div>
 
@@ -925,7 +996,7 @@ and submitting an application using <a href="https://kotlinlang.org/">Kotlin Pro
 
 <!-- ========================== Footer : Message Area Section============================================= -->
 
-<div class="footer-image">
+<div class="footer-image"  id="message-me">
       <h4 class="header col s12" style="padding: 10% 0% 30%;">Message Me</h4>
 </div>
 
@@ -969,7 +1040,6 @@ and submitting an application using <a href="https://kotlinlang.org/">Kotlin Pro
 <div class="bottom-container">
     <center style="padding: 30px 0 2px ; color: white;"> Copyright © Komal Wavhal 2021 </center>
 </div>
-
 
 
  <!-- Go To Top Button on Screen -->
